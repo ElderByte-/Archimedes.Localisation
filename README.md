@@ -61,4 +61,4 @@ label.customer.age=Alter:
 
 The core of this library is the LocalisationService, which handles all the resolving of the translations. Using the ILocalisationService.MessageSources property, you can register your own translation sources.
 
-By default, a simple file based 
+By default, a simple file based properties message source is in place. You can add new [message sources](https://github.com/ElderByte-/Archimedes.Localisation/tree/master/Archimedes.Localisation/MessageSources) by implementing the [IMessageSource](https://github.com/ElderByte-/Archimedes.Localisation/blob/master/Archimedes.Localisation/MessageSources/IMessageSource.cs) interface yourself. For example, you could easily support translations from your database or your web service like this.
