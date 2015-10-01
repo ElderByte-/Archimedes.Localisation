@@ -32,9 +32,9 @@ To just use this library in a simple setup, all you have to do is create  _*.pro
 2. In the messages folder, you can create simple text files with the *.properties extension which contain your translations.
 
 Sample content: 
-* /Resources/messages/myApp.properties       - Contains the default translation (usually english)
-* /Resources/messages/myApp_de.properties    - Contains the German translation
-* /Resources/messages/myApp_fr.properties    - Contains the French translation
+* `/Resources/messages/myApp.properties`       - Contains the default translation (usually english)
+* `/Resources/messages/myApp_de.properties`    - Contains the German translation
+* `/Resources/messages/myApp_fr.properties`    - Contains the French translation
 
 
 ## Format of the properties files
