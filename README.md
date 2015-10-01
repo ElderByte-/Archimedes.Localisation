@@ -26,7 +26,7 @@ Using the Markup-Extension **LocalisationExtension**, it is very easy to localiz
 
 # Configuration and conventions
 
-To just use this library in a simple setup, all you have to do is create a _*.properties files_  in the right place. The rest is automatically handlet for you:
+To just use this library in a simple setup, all you have to do is create  _*.properties files_  in the right place. The rest is automatically handlet for you:
 
 1. In your project root, create the Folder **/Resources/messages**. 
 2. In the messages folder, you can create simple text files with the *.properties extension which contain your translations.
