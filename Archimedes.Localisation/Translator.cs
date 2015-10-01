@@ -35,38 +35,22 @@ namespace Archimedes.Localisation
 
         public static string GetTranslation(string key)
         {
-            if (TranslationProvider != null)
-            {
-                return TranslationProvider.GetTranslation(key);
-            }
-            return "[" + key + "]";
+            return TranslationProvider.GetTranslation(key);
         }
 
         public static string GetTranslation(string key, params object[] args)
         {
-            if (TranslationProvider != null)
-            {
-                return TranslationProvider.GetTranslation(key, args);
-            }
-            return "[" + key + "]";
+            return TranslationProvider.GetTranslation(key, args);
         }
 
         public static string GetTranslation(CultureInfo culture, string key)
         {
-            if (TranslationProvider != null)
-            {
-                return TranslationProvider.GetTranslation(culture, key);
-            }
-            return "[" + key + "]";
+            return TranslationProvider.GetTranslation(culture, key);
         }
 
         public static string GetTranslation(CultureInfo culture, string key, params object[] args)
         {
-            if (TranslationProvider != null)
-            {
-                return TranslationProvider.GetTranslation(culture, key, args);
-            }
-            return "[" + key + "]";
+            return TranslationProvider.GetTranslation(culture, key, args);
         }
     }
 }
