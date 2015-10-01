@@ -10,7 +10,7 @@ Provides a localisaiton / translation solution for .NET Applicaitons which is mo
 ### Localisation in code
 ```csharp
 // Simple text value
-var myText = Translator.GetTranslation("dialogs.cusomter.title");
+var myText = Translator.GetTranslation("label.customer.name");
 
 
 // If the text has formating place-holders - uses string.Format() syntax
@@ -47,6 +47,8 @@ myApp.properties
 # English translation
 label.customer.name=Name:
 label.customer.age=Age:
+
+dialogs.cusomter.age=The customer is {0} years old.
 ```
 
 myApp_de.properties
@@ -54,6 +56,8 @@ myApp_de.properties
 # German translation
 label.customer.name=Nachname:
 label.customer.age=Alter:
+
+dialogs.cusomter.age=Der Kunde ist {0} Jahre alt.
 ```
 
 
