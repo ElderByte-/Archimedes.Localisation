@@ -8,6 +8,9 @@ Provides a localisaiton / translation solution for .NET Applicaitons which is mo
 # Usage of the library
 
 ### Localisation in code
+
+The static class [Translator](https://github.com/ElderByte-/Archimedes.Localisation/blob/master/Archimedes.Localisation/Translator.cs) is the easiest way to access translations:
+
 ```csharp
 // Simple text value
 var myText = Translator.GetTranslation("label.customer.name");
