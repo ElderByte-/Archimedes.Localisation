@@ -13,7 +13,7 @@ namespace Archimedes.Localisation.MessageSources
     public interface IMessageSource
     {
         /// <summary>
-        /// Load all localized messages in the given culture and returns them in a PropertyStore
+        /// Load all localized messages in the given culture and returns them in a Dictionary
         /// </summary>
         /// <param name="culture"></param>
         /// <returns></returns>
