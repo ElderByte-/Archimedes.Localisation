@@ -26,16 +26,38 @@ namespace Archimedes.Localisation
 
         #endregion
 
+        #region Constructor
+
+        /// <summary>
+        /// Creates a new LocalisationService with the default file message source '\Resources\messages'
+        /// </summary>
         public LocalisationService() :
-            this(new FilePropertiesMessageSource(AppUtil.ApplicaitonBinaryFolder + @"\Resources\messages"))
+            this(GetDefaultMessageSource())
         {
         }
 
         public LocalisationService(IMessageSource messageSource)
         {
-            MessageSources.Add(messageSource);
+            if (messageSource != null)
+            {
+                MessageSources.Add(messageSource);
+            }
         }
 
+        private static IMessageSource GetDefaultMessageSource()
+        {
+            if (Assembly.GetEntryAssembly() != null)
+            {
+                return new FilePropertiesMessageSource(AppUtil.ApplicaitonBinaryFolder + @"\Resources\messages");
+            }
+            else
+            {
+                Log.Warn("Can not obtain entry assembly, which may occur when running in a Unit test! No message source pre configured.");
+            }
+            return null;
+        }
+
+        #endregion
 
         #region Public API
 
